@@ -2,6 +2,10 @@ name: Init
 
 on: [create, workflow_dispatch]
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   initialize_repo:
     runs-on: ubuntu-latest
